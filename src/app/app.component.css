@@ -1,0 +1,74 @@
+::ng-deep #range-selector {
+    height: 300px;
+}
+
+::ng-deep path {
+    stroke-width: 1.5;
+    /* fill: red; */
+}
+
+::ng-deep .slider-marker path {
+    fill: #000000;
+}
+  
+::ng-deep .dxrs-slidersContainer .slider:last-of-type  {
+    display: none;
+}
+
+::ng-deep .dx-button-mode-contained {
+    background: url(/assets/images/plus-btn-disabled.png);
+    border-color: #ddd;
+    color: #333;
+    width: 40px;
+    height: 30px;
+    outline: none;
+    border: none;
+}
+
+::ng-deep .dxrs-range-selector-elements text:last-of-type,
+::ng-deep .dxrs-range-selector-elements path:nth-of-type(1), 
+::ng-deep .dxrs-range-selector-elements path:nth-of-type(2) {
+    display: none;
+}
+
+/* Plus Button CSS */
+.plus-btn {
+    top: 81px; 
+    left: 225px; 
+    position: absolute; 
+    width: 40px; 
+    height: 40px;
+}
+
+/* Scroll bar container and flex-scroll */
+.container {
+    margin: auto;
+    width: 750px;
+    white-space: nowrap;
+    /* margin-left: 130px; */
+}
+
+.flex {
+    flex-wrap: nowrap; 
+    overflow-x: auto;
+  }
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.flex::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.flex {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+
+@media only screen and (max-width: 479px){
+    .container {
+        margin: auto;
+        width: 750px;
+        white-space: nowrap;
+    }
+}
